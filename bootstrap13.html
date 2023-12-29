@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>boostrap 13</title>
+    <link rel="stylesheet" href="./bootstrap12.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bootstrap13.css">
+</head>
+
+<body>
+    <div class="head1">
+        <div class="d-flex justify-content-center" style="width:100%">
+            <nav class="navbar navbar-default fixed-top">
+                <div class="header container-fluid d-flex justify-content-center" style="gap:20%">
+                    <div class="navbar-header  ">
+                        <h4>Material Kit 2</h4>
+                    </div>
+                    <div class="d-flex">
+                        <div class="dropdown">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMYUae0qGdOPStQrPv8pW5V2IVH_lXo_bSmQ&usqp=CAU"
+                                height="30px" width="30px">
+                            <button type="button" class=" button dropdown-toggle" data-toggle="dropdown">
+                                Pages
+                            </button>
+                        </div>
+    
+                        <div class="dropdown">
+                            <img src="data:image/png;base64,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"
+                                width="20px" height="20px">
+                            <button type="button" class=" button dropdown-toggle" data-toggle="dropdown">
+                                Account
+                            </button>
+                        </div>
+    
+                        <div class="dropdown">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAKlBMVEX///8AAAD29vYvLy8FBQXg4OAqKiqMjIwzMzOJiYknJyeOjo4sLCzi4uJTvPwoAAAA/klEQVR4nO3by27CMBBA0eA4Dx79/98tUkvNInKUorgZes42i5krEEJW3HUAAAAAAAAAAAB3p4aECBEiRIgQIUL+WwgAAABwVOnc59xPaflpnMOH4fI1ZRxih6TLY8y4+JmECTmXOVPokL7MmUOH5DInCzlCyNt8taYy5xo6JI2PMbfYP7/d8F1y+1h8HCekS9Oc83wN/xcFAAAACGXt0CDM4YMQITsRImQnQoTsRMjRQgAAAIBofn/fpO2ea37um2x/vbbxpnXlvsn2F55b71r1dN9k8yvorXeteuVSQOtdq165ptF616q1xYS0JkTITt4mBAAAAAAAAAAA+DOfnjwPQt060REAAAAASUVORK5CYII="
+                                width="20px" height="20px">
+                            <button type="button" class=" button dropdown-toggle" data-toggle="dropdown">
+                                Sections
+                            </button>
+                        </div>
+                        <div class="d-flex">
+                            <div class="dropdown">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKYAAACmCAMAAABnVgRFAAAAY1BMVEX///8AAAB9fX2bm5smJib5+fnDw8OpqanR0dGurq7x8fErKysYGBiVlZVcXFy+vr7g4OAQEBCHh4cfHx9ISEi3t7c6OjpDQ0NXV1dQUFDm5uba2tpqampkZGSioqIzMzN1dXUEEkvNAAADNUlEQVR4nO3d65KiMBAFYCJ3RLmJYlD0/Z9ya6dKYWdFIDkdQ9nn/8SvrCFJJyE6zpLk3XVvIpdQLnL9m2grTOWYKyuTxphSiGuiyowNKoUXqTI7k0wRr4MZMtMqZuXRJcUxa5mTxcUxA9UWZiRmJjDMREaN2UZ9ykcLboROPx9SYbaX7asuDd9v3srHBFOBGVWvBwiKNFKZeTWnfLKWM32TSnFWZSZGmd46mFtmWsX0yg1Z7gWMeZ77FwpJKmbiwkxk9Jm+tUwZl302fYeEzi7yNZjtUZjKXZ0pz8aUQuyUmUZXX45SkemXIy2SpApUmZuRFkmSMtMuZpHSpYAxqy6gyx3GVN9FmJFuHUyXmcxkJjOZyUxmMnPlTHkRhXZEOvhMEiao2Cz6FkmYqAWGfpuThFkXApF9f5iMhOkHHSDDI2/f/KQzk5nM1GNGIaBDigdnRmm6dwHJuXeSMPcYJvVgCVryLFpaptwcTvppQv/ZIs0j5EtEBp/y1R0SM5lpLTPxtZP4g/ZImDnkOJ9H3W+iRiHiAhj17g3xmJ5hTppeiWdIThTrJ6y5AGYmM5mpz/Qjd6efjrpDAr1beSBe31zJYIlaeycvgAH17+kckxfACSKDT/nmDomZzLSWuY4nPb8cEOnWUQAL4gJ4JYvaGUZJXgC302/Gzgj1hgs+zGQmM+1j+pkLSDe43cjqHWAugP8GVACn9DvAgDQ1dQEMDzOZyUwLmUkLiBxsARPtAB8BObnT/WYV/oz+FyXm4z0+3UwXwL+ziIm6HWd6TNdiggrg/XQBrMV0ZFbrJ5jxCOkx4ZnLrFfBvLVjDVjFdEcbsIh5K8cb+Cyzivq3rqPcH2/AijF9Oi8L4HrZXm88eUEuCTN8/Q8+nsmrYkiYi98Xat78V9ExFxfAbx5RQmZSNouymbwMm4SJz/Py1+3PVPQmLGf+CjOZaSvzug7m7HtxP8rcTI1en2IeBwug+2x+A4YncvXgRMHsr9L50HxzeZg5CDORwTFTN6PLHcYE3Orw7sIHGNNEmGkH8xM3Ripk8dqBTk7KP8gkTf7OUaeqdJz8YArplUsmRf99n0GIONsxmbhdpvwDm6DnoS9rd4kAAAAASUVORK5CYII="
+                                    height="30px" width="30px">
+                                <button type="button" class=" button dropdown-toggle" data-toggle="dropdown">
+                                    Docs
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary">Buy now</button>
+                        </div>
+    
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="head2 d-flex flex-column justify-content-center ">
+            <h1>Your Perfect Place for Work</h1>
+            <h5 style="width:30%" class="pt-3">The time is now for it be okay to be great. People in this world shun
+                people for being
+                nice.</h5>
+            <div class="d-flex pt-3" style="gap:30px">
+                <button type="button" class="btn btn-primary">Get Started</button>
+                <p class="pt-2"> READ MORE</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="d-flex justify-content-center">
+        <div class="full-div">
+
+
+
+
+            <div class="d-flex justify-content-center" style="gap:10%">
+                <div class="p1">
+                    <div>
+                        <img
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCABBAEIDASIAAhEBAxEB/8QAGgAAAwEBAQEAAAAAAAAAAAAAAAEGAgUDBP/EACwQAAICAgADBgUFAAAAAAAAAAABAgMEEQUSMRMUIVOBkiIyQlFyQVJxobH/xAAYAQADAQEAAAAAAAAAAAAAAAAAAwQCAf/EAB8RAAMAAQUBAQEAAAAAAAAAAAABAhEDBBRBURMxEv/aAAwDAQACEQMRAD8AsBAzl8Q4k6puqjXMvml9jcQ7eEYqlKyzqbFsmnl5De3fZ6SYd6v8+z3sfxn6J5C8KXYbJrvV/nWe9jWXentXWesmHHfocheFKM5eBxF2zVV2uZ/LL7nTQiocPDHzSpZQwADBoyyTlNzm5Pq3tlXIkNlm17Jdx0b2PZrFgrcmuuXSUkno7U+GVqbUMOMo/o3e1v8AofeooeGImHSyjh7Hs7dfDK5S1ZiKEf3K5vXpo4di5LJRXRNoItX+BUOf03CbjJSXVPaKlElsrIk+56H7fs2AASFR5z6EfssZdCM6PTLdp2S7jo+nBko5lLk9LnXizp5lPEZZVkqJ2dm38Orklr+NnD2PZTUZeRCrCwd7Aqz68qMsmc+ySe+a1Nf6ce2Sd02ntOTPHY9nJjDyFVlYN7K2HQkF4vSLCPQm3XQ/b9mgGBGVGZImeK4M6LpWwi3VJ78PpZTtHnOGxulqPTeUL1IVojNhsqZ4VMnt01t/ijHcaPIr9iK+VPhL8WTWx7KXuNHkV+1GoYVMXtU1p/ig5U+B8WcjheFO66Ns4tVxe/H6ikijEIaPRIk1NR6jyyrTj+EMBgKGCYmAABhiADpkBoAADaGgA4aGAAAH/9k=">
+                        <h4>Modular Components</h4>
+                        <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and
+                            that
+                            process will continue whatever</p>
+                    </div>
+                    <div class="pt-5">
+                        <img
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAA+AEADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAABQYAAQIDBP/EACIQAAICAQQDAQEBAAAAAAAAAAECABEDBAUhMRITYVEiQf/EABgBAQADAQAAAAAAAAAAAAAAAAQAAQMC/8QAHxEAAgEEAwEBAAAAAAAAAAAAAAECBBFBYQMUIRMx/9oADAMBAAIRAxEAPwBxlXITAu5bi/sbDgbxC8Mw7JncIObsjic1BXYZuS4qFiTZJJ+yXEdbZh2NDXclxUuWGINgkGTrbJ2NDXcuBtu3B/YuLM3kG4Vj2DDAMPODg7M3hNTV0ZJikWLEk9mNjdRQuJpcmFRg3clykpmAZvEHs/k9i6Bs2fKumIyJj/0mr+RTaX6GUW/w8tyXCPqTcXx4tPj9Rxp/bG+PkH5UOLK2MkEqasdSoyT8yW429LDEEEdiNQMUrjYvUNU4EU+Smidccm6iYbViD2OJdJklRg76ZceTOiZn9aE8t+T36nXjSsuDQMBjQ2WHPmfsE3JcU4KTuw6k0vArrtzTNh9emQ4vM3k4A8jB1zFy7kjBRVkSUnJ3Zu42rFBbYgDs8RwXqFqsCKfJbCL+67a4ytmwL5K3LKOwYxGc2W4bj5Hxu6NuSCmrMSzammBB/DJcbmxiZ9Yi+1oN8NipcsWxoAk/I1esTS4xK7WifDYI2vbnOVc2dfFV5VT2TD6iZVanQQvJyObuxMIKKsj/2Q==">
+                        <h4>Great Features</h4>
+                        <p>People are so scared to lose that they don't even try. Like, one thing people can't say is
+                            that
+                            I'm
+                            not trying, and I'm not trying my hardest.</p>
+                    </div>
+                </div>
+                <div class="p2">
+                    <div>
+                        <img
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAA6AEcDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAABQYAAgQBA//EADAQAAEDAgIIBAYDAAAAAAAAAAEAAgMEEQUhEjFBUmGRsdETFSRzFCI0QnKBMlGh/8QAFwEBAQEBAAAAAAAAAAAAAAAABAIDAP/EAB8RAAMAAQQDAQAAAAAAAAAAAAABAhEDBBIxExQhMv/aAAwDAQACEQMRAD8AcCvCepipxeV4F9Q2lekjwxjnHU0XKV5p3Tyukebk/wCLbS0ub+9GOrqcF8DJxiDdk5Dup5vBuSch3QO67dJ9eA/nsN+bwbknId1ZuLU5NiHt4kIFdduu9eDvPY0xyNkaHMcHNO0K6AYZUGKpay/yPNiOOxHgiakcHgVp3zWSyiiizNDLWn0k3tu6JXumeu+km9t3RK107a9MHuO0esbXSPDGAuc42AC2Pwuqa4BjRJlnonVwWWjGnVxN0i27hmCijpfiMUkp5TaNjSGMvYX2ftaXVJ/CIlNfTHJh1RHAZS0ZfybtbxWW6Jxumkw6piqNMPhzBOu39ITdVDbzkm0ljBopT6qH829UztKVqU+qh/NvVNDUXc9oRt+megUXAoiiTLXfRz+27olS6bqmPxYJGbzSOYSe4Fri1wsQbEJ+16aCbjtF2vLXBzTYg3BRJ9TR1ln1IkimAs5zBcOQq67dJqEw6rASq69j4Ph6fxND7nyG7nLBdUuu3XTKlYRzp12aKQ+rh9xvVNTUr4dGZa2ID7TpH9Jpahbr9IVt+mWCi6FEQSUcEKxDC2VLjIw6Em02yKLFUcri3DyiLlUsMWzg9QDk+Pmey55RUb0fM9kwFcW/s2YeGQB5TUb0fM9ldmDzE/M9gHC5RxWau9izloyeNDRR0rLMzcdbjrK2gKrVcI9N08sRKSWEdUUUUlH/2Q==">
+                        <h4>Awesome Support</h4>
+                        <p>The time is now for it to be okay to be great. People in this world shun people for being
+                            great.
+                            For
+                            being a bright color. What else could rust?</p>
+                    </div>
+                    <div class="pt-5">
+                        <img
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCABGAD4DASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAABgABAgQFA//EACoQAAEEAQIDCAMBAAAAAAAAAAEAAgMRBAUxIWHREhMVIjJRUpEUccGx/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAMEAgH/xAAfEQACAQQDAQEAAAAAAAAAAAAAAQIDBBFREyExQRL/2gAMAwEAAhEDEQA/ADFJMSuc08cDO1K4NH+rqWQbwdbTWs46xjg8GyHmAOqXjEHwk+h1W+KehfJDZo2ntZvi8Hwk+h1TjV8cni2QfsDqjinoOSGzRSXKGeOZvajcHBdLWGsDE8jEoZzcl2TkOcT5QaaPYIlcUIWqrZJtsmuH0kTtPahatw4MkkQlkeyGM7Oeav8ASrbS9JUm/Cvae1YlwHsiMsUjJoxuWHb9hVbXE0/Aaa9LWHkHHyGuB8pNOHuERgoStFYPBSXKw0yq3fTQnbIPtF7kHWt2v0zcfDrEA6VjXbFwBWvqLiX5DHYxe2NoDHA8GCt6WHa1YdTje1n5BljmYKEsdcRzCdUi8poVBrDTO2nOLXYwZjlgeS1779Yr2WZOA2eRrfSHED7V+XU44w4wOllmIrvJKHZHILKu90U4vLbCbWEkTtFjdkI2i5uyRdfB1v8AR3bIOnjME743Di00jMhZuoadHl+b0SDZw/qXQqKD78ZutByXQN2ntXnaNkA8HxkcyeibwjI+Uf2eiu5YbJPxLRStPaueE5Hyj+z0Um6ROTxfGByJ6I5YbD8S0VYIzNMyNu7jSLm7KhgafHi+b1PO7j/FoAKGvUU30V0YOK7JFRLbSSU48gWBR7sJJLpnAu7CkGBJJAYJhtKSSS4aP//Z">
+                        <h4>Modern Interface</h4>
+                        <p>If everything I did failed - which it doesn't, it actually succeeds - just the fact that I'm
+                            willing
+                            to fail is an inspiration.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class=" demo d-flex justify-content-center" style="width: 70%; margin-top: 5%;">
+
+
+                    <div style="margin-top: -40px;">
+                        <img src="https://images.unsplash.com/photo-1521668576204-57ae3afee860?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+                            width="300px" height="400px" class="image">
+                    </div>
+                    <div class="b1">
+                        <p>Decisions: If you can't decide, the answer is no. If two equally difficult paths, choose the
+                            one more
+                            painful in the short term (pain avoidance is creating an illusion of equality). Choose the
+                            path that
+                            leaves you more equanimous in the long term.
+                        <p>
+                        <h5>
+                            Michael - Writter</h5>
+                    </div>
+                    <div class="b2">
+                        <h4>1,679,700 +</h4>
+                        <p>Developers and Companies around the world using our products.</p>
+                        <a href="#">See all products</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center" style="gap:10%; margin-top: 5%;">
+                <div style="width:30%">
+                    <h2>Read More About Us</h2>
+                    <p>Pain is what we go through as we become older. We get insulted by others, lose trust for those
+                        others. We
+                        get back stabbed by friends. It becomes harder for us to give others a hand.</p>
+                    <a href="#">More about us</a>
+                </div>
+                <div style="width:30%">
+                    <div class="d-flex">
+                        <img
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAA+AD4DASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAABQYBAgQAA//EAC8QAAEEAQEECQMFAAAAAAAAAAEAAgMRBAUSIVKBExUxQWFxkbHRJCU1FCIjQmL/xAAZAQEBAQEBAQAAAAAAAAAAAAADBAEAAgX/xAAhEQADAAEDBQEBAAAAAAAAAAAAAQIDBBEyEhMUITFhcf/aAAwDAQACEQMRAD8AcCVnyMyHG3SP/dwjeVbKm6DHkk4Ru80sPkc95c8kuJskp8WLr9v4DlydHpBzriDgk9B8ruuIOCT0HygVqbVHjwT9+w51vBwSeg+VZmq47jR22+JCA2ptd48G9+xra4OaHNIIPYQrIJpGQRKYSba4WPAo0FJkjorYqi+tbmHVj9vl5e4S5aYdX/Hy8vcJctV6bg/6S5+RswMX9ZP0e3sACyVbOwn4ctElzD2OpRpLI5csCSQx0LFO2ST5oq+KAw5URyS+MU4lwLtg+ff5Lbtzf4ZMKpANqbW3IxcWPT2Sxz7TySAaI2+Xch9pppV8DqXP03aYfr4ufsUxBLemH6+Ln7FMYUWp5lWn4mDWPx8vL3CW7TRqURmwpWNFkiwPLelW0+l4MLUcjdpj8ZmVeWAWVusWL8V7ajnROBx8NrWQE24tFbRQu1Np3jTrqYStqdi9rrVLU2vWx5N2ln7hFz9imVqXNGjL80PHYwEk+e5MYXz9TzLMHEhwtB87SGyvMkLujcd5FbijZCoW2hi6h7oW4VL2LJ0fIH9o/U/C7qjI4o/U/CYywKOjCfybB7CF7qnI4o/U/C9ItGlc7+SRoH+bKO9GFYMAWPU2csMnjiYrMaMMjG7vJ7StQXAUpCnbbe7KEtlsf//Z">
+                        <p>It becomes harder for us to give others a hand.<br>
+                            We get our heart broken by people we love.</p>
+                    </div>
+                    <div class="d-flex">
+                        <img
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCABFAEQDASIAAhEBAxEB/8QAGgAAAwEBAQEAAAAAAAAAAAAAAAEFBgIEA//EACsQAAIDAAEBBgUFAQAAAAAAAAABAgMRBAUTFCExQbESJGFzwTRRcXKRof/EABkBAAMBAQEAAAAAAAAAAAAAAAADBAIBBf/EACERAAICAQQDAQEAAAAAAAAAAAABAgMRBBQyYRIhURMz/9oADAMBAAIRAxEAPwDYi0GePqHM7pUnHxnLwivyajFyeEcbUVlnr0NMtZfZdLbJuT+rONKdt2Tbjo1mhplNHobbsNx0avR6Zrj8y3jyTjJuPrF+TNBRdG+qNkfKSE2VOA2uxTPqAgFDRMhdbk+9QXoofll1mf62/nI/bXuyjT8xN/A8Gj040rRiqem0218aq2ctc3OO4kWyl4kcY+RN0NPf3mE+zjRx+LZZLziqms/jxOeqVwg6JQrjW5w2SisWmVP3ho64espnj0t9Gk3xJL9pv2RC0t9Ffysv7v2RjUcDdHMqAJAeeXCZnuuP5yH217s0TM515NcuD9HDP+so039BF/An6V4Tjd0ymuvlVVTjqmpyzUyNoaXyh5EkZeJWfHhDs5UcjiVWR85q5vX/AJ4HHVba5uiELI2OEMk4vVpN0NMqv3ls65+sJHel3on6Wf3H7IgaX+hp90k36zef4heo4G6OZUQAgPOLgZP6pwu90r4cVkfGL/BRZzKOmoycXlGZRUlhmMtptpl8NsJRf1RxpsJV6cdkWLVfUSujsyehprOx+g1Ud3XRz8H9M3xuHdyZpQi1H1k14I03FpjRTGuHlFHUa8PqlhPbc7B9dagMAAQOGIAABYLEAAAYh4AAAYNAAAMAAAP/2Q==">
+                        <p>As we live, our hearts turn colder.<br>
+                            Cause pain is what we go through as we become older.</p>
+                    </div>
+                    <div class="d-flex">
+                        <img
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCABGAD8DASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAQYAAgUEA//EADEQAAEEAQAGCAUFAAAAAAAAAAEAAgMRBAUSMVGisRUhJEFTYXPREyI0cZEzQkNygf/EABgBAAMBAQAAAAAAAAAAAAAAAAEDBAAC/8QAIBEAAwABBAMBAQAAAAAAAAAAAAECAwQREjETFCEyYf/aAAwDAQACEQMRAD8AcULUJWXnaU+E8xwAOcOouOwLuYdvZHNUpW7NS0LS90nln+XhHsp0lleLwj2TfXsV7EjDaNpe6SyvF4R7KzdJ5QNl4d5FoW9ezeeRgtRcWFnNygQRqyDaF2ApNS5ezHJqlujyyHmOCR42taSPwlW7NlM2aeyTem7kla1Xpl8ZLqO0XtG1VoLnBrRZJoBbOJo/EbGX5UocR1FpOqGnz70+7UL6JmHXRkWja0M/Ahjt2NJrdV6g+ahvvd91m2jNKlugVLl7M6sGQszIiO9wH56kyBK+Ke1Q/wB280ztUmpX1FOn6Zz530c/pu5JVtNWd9HP6buSU7TdL+WcajtHvjvDciJzjQDwSf8AUz5FFrcmERyFoO3vB80o2vaHKmga5scha120dxTMuJ200cY8nHdMZphHiYEoeWMLg4muqydyWLUmnknfryvL3byqWjjx8F9Bkvk/h0Yh7XD6jeaaW7Eq4h7XB6jeaam7FNqu0P0/TBI0OYWkWCKKUsvGfiTFjwa/ad4TgQueeBkrdWRgcNxCXhy+N/w7y4+aFC0bTC7RWLf6XEfdV6KxvC4j7qv2YJvDRgWja3uisbwuI+69I9GYzTfwQfuSUPZg3hoz9D4rpZxM4UxmzzKYmqkbA0AAUAvQBR5MjyVuV444LYJQIUUShgNUIaqiiICaqIaFFEDBAVlFFgn/2Q==">
+                        <p>When we lose family over time.<br>
+                            What else could rust the heart more over time? Blackgold.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center" style="width:100%">
+                <div class="working ">
+                    <P>CO-WORKING</P>
+                </div>
+            </div>
+
+            <div style="text-align: center; font-size: 17px;">
+                <h1>Explore our places in London</h1>
+                <p>If you can't decide, the answer is no. If two equally difficult paths, choose the one more
+                    <br>painful in
+                    the
+                    short term (pain avoidance is creating an illusion of equality).</p>
+            </div>
+
+            <div class="d-flex justify-content-center" style="gap:50px">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80"
+                        width="400px" height="250px" class="image2">
+                    <h5 class="head5 ">Campus 6</h5>
+                    <p class="p3 ">Website visitors today demand a frictionless user<br> expericence. Applies to mobile
+                        applications too.</p>
+                    <input type="button" value="FIND MORE" class="find-button">
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1498677231914-50deb6ba4217?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80"
+                        width="400px" height="250px" class="image2">
+                    <h5 class=" head5">Cozy Spots</h5>
+                    <p class="p3 ">If you're more passionate about founding a <br>busines than the business itself
+                        technology.
+                    </p>
+                    <input type="button" value="FIND MORE" class="find-button">
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1587578932405-7c740a762f7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80"
+                        width="400px" height="250px" class="image2">
+                    <h5 class="head5 ">Home Office</h5>
+                    <p class="p3 ">Website visitors today demand a frictionless user<br> expericence — especially when
+                        using
+                        search.</p>
+                    <input type="button" value="FIND MORE" class="find-button">
+                </div>
+
+            </div>
+            <hr class="hr">
+
+
+            <div class="d-flex justify-content-center" style="gap:50px; padding-top: 2%;">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1589884629108-3193400c7cc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80"
+                        width="400px" height="250px" class="image2">
+                    <h5 class="head5 ">Virtual Office</h5>
+                    <p class="p3 ">If you're more passionate about founding a business<br> than the business itself, you
+                        can
+                        fall into.</p>
+                    <input type="button" value="FIND MORE" class="find-button">
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80"
+                        width="400px" height="250px" class="image2">
+                    <h5 class=" head5">Co-Working Spaces</h5>
+                    <p class="p3 ">Smart money is just dumb money that's been<br> through a crash. Business than the
+                        business
+                        itself. </p>
+                    <input type="button" value="FIND MORE" class="find-button">
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1461988625982-7e46a099bf4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80"
+                        width="400px" height="250px" class="image2">
+                    <h5 class="head5 ">Private Space</h5>
+                    <p class="p3 ">Technology is not only the thing that moves the <br>human race forward, but it's the
+                        only
+                        thing that has.</p>
+                    <input type="button" value="FIND MORE" class="find-button">
+                </div>
+
+            </div>
+            <hr class="hr">
+
+            <div class="head3">
+                <div class="d-flex justify-content-center" style="gap:35%">
+                    <div>
+                        <h5 class="text-white">For being a bright color. For standing out. But the<br> time is now to be
+                            okay to
+                            be the greatest you.</h5>
+                    </div>
+                    <div>
+                        <input type="button" value="START NOW" class="start-now">
+                    </div>
+                </div>
+            </div>
+
+ 
+
+
+        </div>
+    </div>
+
+
+    <div>
+        <div class="d-flex justify-content-center" style="gap:10%; padding-top: 5%;">
+            <div>
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAxADIDASIAAhEBAxEB/8QAGgABAAMBAQEAAAAAAAAAAAAAAAMFBgEEAv/EACcQAAEEAgAFBAMBAAAAAAAAAAEAAgMEBRETFCExURJBYXEiM1Kx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDXIioqtbmYJrNi/bjAlkB9Mxa1oDiFReos/ka3Bxb7dXI3H9i08ckHZAXpfQgifGyXKXWPk6MabOi4/CC3RVMML6eYhiFqxKySF7iJZPV1Bbr/AFWyAiIgLOVrWN5d0F6cNMdmR5jO9H8jrfkLRqC21vKTnQ/W72+EGfyV3FtxtqOnYBMrmu4Y3oHY3oey9MlrBzvlfNZa98oA27e2gfz06eVPWtx0sXQfPEeC6FodKBsMOhrY8Hyvi5KbEePldAYQ6230td3LdHRPj6UCvar2szWFWbjCOu9pd1J7t7q6XA0DsAF1UEREBRzsMkEjG93NIG/pSIgp6r8lXpw1zjo3iNgZvmB10NeF2ZuQuz1RLTZCyKZsjncYO6Dftr5VuiAiIgIiICIiAiIgIiICIiD/2Q=="
+                    width="50px" height="50px" class="padding-top:10px">
+                <h4 class="head4">Material Kit 2 PRO</h4>
+                <div class="d-flex pt-3">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAApACQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAMFBgIE/8QAJRAAAgIABQMFAQAAAAAAAAAAAAECAwQFERIxEyFRIjNBcXKx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwDXA5slsrlLwmzO15xjbbYwi6905JL0+TUmprSAqli8RTjqKLL6rd7anGMdHEtSAAAqO/2LPy/4ZbLLI14+ndWp7pKK1+G2u5rOeTzxy/CQmpxogpJ6ppcMsuJYqrbYWZ7VCNUYShY9ZLmX2XxCsLQrusqo9Tndp3JhaAAIoAAAAAAAD//Z"
+                        width="50px" height="50px">
+                    <img src="data:image/png;base64,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"
+                        width="30px" height="35px" class="pt-2">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAoACcDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAMEBQIG/8QAKRAAAgEEAQIDCQAAAAAAAAAAAAECAwQREgUxUQZBcRMhIjIzYaHB8f/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwD1wBDc3FO1ourVeIry82+xRMDDqcxeRqNK01SfSUXk0bK9jdbQlB0q0PmhLr6lxNWwARQx+d+paKefZbvb8frJsENzbxuKekspp5jJdYvuIlSpqSTi00+jRjbRfiOLovPw4nj0/hfo2sqdpVo4ppz2xoml70ccdxsLFOTe9WSw5dvsii8ACKAAAAAAAA//2Q=="
+                        width="50px" height="50px">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNKxB8zytxbsC9jB9F2argh-B9UMXoZJAJZg&usqp=CAU"
+                        width="30px" height="40px" class="pt-2">
+                </div>
+            </div>
+
+            <div>
+                <p class="footer-heading">Company</p>
+                <div class="Features">
+                    <p>About Us</p>
+                    <p>Freebies</p>
+                    <p>Premium Tools</p>
+                    <p>Blog</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="footer-heading">Resources</p>
+                <div class="Features">
+                    <p>Illustrations </p>
+                    <p>Bits & Snippets</p>
+                    <p>Affiliate Program</p>
+
+                </div>
+            </div>
+
+            <div>
+                <p class="footer-heading">Help & Support</p>
+                <div class="Features">
+                    <p>Contact Us</p>
+                    <p>Knowledge Center</p>
+                    <p>Custom Development</p>
+                    <p>Sponsorships</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="footer-heading">Legal</p>
+                <div class="Features">
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer">All rights reserved. Copyright © 2023 Material Kit by Creative Tim.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap13.js"></script>
+</body>
+
+</html>

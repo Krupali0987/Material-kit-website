@@ -1,0 +1,145 @@
+.button {
+    border: none;
+    background-color: rgb(230, 224, 217);
+}
+
+
+.header {
+    padding: 10px 16px;
+    background: rgb(230, 224, 217);
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+
+.head1 {
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURFRMYHSggGBolGxMVITEhJSkrOjo6Fx8zODMsNygtOisBCgoKDQ0NDg0NDjcZFRkrNysrKystKysrKysrKy0rKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAKgBKwMBIgACEQEDEQH/xAAYAAADAQEAAAAAAAAAAAAAAAAAAQIDB//EABgQAQEBAQEAAAAAAAAAAAAAAAABEQIS/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A5EqEcaRcMoYKiomKgiouJioC4qJi5AVGnLONOVFxcRFQFyqlRDijSU5UQ5RFjU6YAyK0Bajqnai0VPTO1dqKgioq6igmpqqmoCFYYBl1EWNekUGVTVdIoqekqpADhHAVFRMVAVFRMXBFRUTGkBUXEyKkBUXERUUXKcRFQGkpyolPQXp6mUaovRqNGg01NqPRXpBXXSLStTaAtTaLU2gKm0Wp1AWpOp0AVotTaBWs7VVFBNRV1NgqaWHSAzgMDioUOAqKhRUEVF8ojSAvlSOVwBFyFIqKAxACpTRpgrRpFoL0rUaNA7S0qm0FWptK0rQFqbRam0BaWiptQO0rSLQFpUtAJqaqooJpGBU0lEAMCAqKiYqAcVCOCLi4iLgLi4z1XNBpKpEVqh6NTaWgrT1OjQVo1OgD0UtK0D0rS0rQFpWlpagLU6VK0DtTRqbQPStLStAWlpWloHaVpam0Uy0qQGCAKOEAWcQcBpFRnKuCLVGeqlBa+WenKDWVWs+aYKtLSIFaNSNBejUaNBelqdK0FaVqdLQO1NpWlaB2lqdLQVam0rSoC1NoKgKWlStFPU6CAaNAAAAFGQBR6nRoKlXKzh6C9XzWOq56EbHGerlBrzRaiUWgvStTKYKhaE2grS1Oi0FaWp0rQVaVqdLQVqdKjQFpaKQDStKloo0tBACMqBAAAAAAAAy0ADNIBcCdPQNUTp6DSVUrKVWiNZT1j6V6Bcq5WMq5QWVqb0WgdpanRoKtK1NpaCtLU6VoKtGo0aKu0qnRoClRpWgCBAZGAIAAACAwAAAMCI6QHpaBAVKaTA5VSoEBZyplOUFac6Ro0GmjUSjQWVLS0QaNKgUaKm0tA9BaWgrRqSBWhOgDBGBggAAAAAAARgDAAqSsGAkzwYBQwAABAoFDAaNIANOVIBejU6Wgq0tIACAAaNGEAAAGCAGAABkAMAAQAAAAF4YAEYMCGGALCxaQIGASFWEBEYAgAAAAAjAEDAAqekBAAAAAABAoEAMAAAAABgFmAAAAAGAIGAIAAabAAIqABAAAAAAAAEYAiAAABAEAAAAHDAAgAoAAB6DAP//Z');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 700px;
+}
+
+.head2 {
+    color: white;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.button1 {
+    border: none;
+
+}
+
+.p1 {
+    width: 22%;
+    margin-top: 30px;
+}
+
+.p2 {
+    width: 22%;
+    margin-top: 30px;
+}
+
+.image {
+    border-radius: 10px;
+}
+
+.b1 {
+    width: 20%;
+    padding-top: 5%;
+}
+
+.b2 {
+    width: 20%;
+    padding-top: 5%;
+
+}
+
+.demo {
+
+    background-color: rgb(52, 50, 50);
+    color: white;
+    border-radius: 10px;
+    gap: 10%;
+    height: 400px;
+}
+
+.working {
+
+    background-color: rgb(171, 222, 242);
+    color: rgb(8, 72, 95);
+    border-radius: 20px;
+    width: 10%;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.find-button {
+    border: 1px solid rgb(8, 72, 95);
+    border-radius: 5px;
+    font-family: 5px;
+}
+
+.head5 {
+    color: rgb(38, 110, 139);
+    margin-top: 20px;
+}
+
+.image2 {
+    border-radius: 10px;
+}
+
+.hr {
+    border-color: rgb(223, 221, 221);
+    width: 70%
+}
+
+.head3 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1tTh1_HzPBnlOc1u0zt3DzkF1GoT0Fg1kyQ&usqp=CAU');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 90%;
+    height: 150px;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 10%;
+    padding-top: 2%;
+
+}
+
+.start-now {
+    background-color: rgb(245, 204, 4);
+    color: black;
+    border-radius: 20px;
+}
+
+.footer-heading {
+    font-weight: bold;
+    color: rgb(18, 71, 88)
+}
+
+.Features {
+    color: rgb(18, 71, 88)
+}
+
+.footer {
+    text-align: center;
+    color: rgb(18, 71, 88);
+    padding-top: 2%;
+}
+
+.head4 {
+    color: rgb(18, 71, 88);
+    padding-top: 20px;
+}
+
+.full-div {
+    background-color: rgb(230, 228, 226);
+    border-radius: 20px;
+    margin-top: -3%;
+    width: 97%;
+    padding: 20px;
+}
